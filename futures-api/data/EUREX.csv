@@ -5,15 +5,15 @@ F2MX,EUREX,MDAX,HMUZ,EUREX/F2MX,,
 FBTP,EUREX,Long-Term Euro-BTP,HMUZ,EUREX/FBTP,,
 FBTS,EUREX,Short-Term Euro-BTP,HMUZ,EUREX/FBTS,,
 FBUT,EUREX,Butter,FGHJKMNQUVXZ,EUREX/FBUT,,
-FCAG,EUREX,Dow Jones-UBS Agriculture,HMUZ,EUREX/FCAG,Dairy,13/04/2022
-FCEN,EUREX,Dow Jones-UBS Energy Index,HMUZ,EUREX/FCEN,Natural Gas,20/05/2023
-FCGR,EUREX,Dow Jones-UBS Grains,HMUZ,EUREX/FCGR,Grain and Oilseeds,27/05/2022
-FCIN,EUREX,Dow Jones-UBS Industrial Metals,HMUZ,EUREX/FCIN,Base Metals,05/07/2022
-FCLI,EUREX,Dow Jones-UBS Livestock,HMUZ,EUREX/FCLI,Livestock,11/05/2022
-FCPE,EUREX,Dow Jones-UBS Petroleum,HMUZ,EUREX/FCPE,Grain and Oilseeds,13/04/2022
-FCPR,EUREX,Dow Jones-UBS Precious Metals,HMUZ,EUREX/FCPR,Precious Metals,14/04/2023
-FCSO,EUREX,Dow Jones-UBS Softs,HMUZ,EUREX/FCSO,Softs,06/06/2022
-FCXE,EUREX,Dow Jones-UBS Ex Energy Index,HMUZ,EUREX/FCXE,Natural Gas,10/03/2023
+FCAG,EUREX,Dow Jones-UBS Agriculture,HMUZ,EUREX/FCAG,Dairy,
+FCEN,EUREX,Dow Jones-UBS Energy Index,HMUZ,EUREX/FCEN,Natural Gas,
+FCGR,EUREX,Dow Jones-UBS Grains,HMUZ,EUREX/FCGR,Grain and Oilseeds,
+FCIN,EUREX,Dow Jones-UBS Industrial Metals,HMUZ,EUREX/FCIN,Base Metals,
+FCLI,EUREX,Dow Jones-UBS Livestock,HMUZ,EUREX/FCLI,Livestock,
+FCPE,EUREX,Dow Jones-UBS Petroleum,HMUZ,EUREX/FCPE,Grain and Oilseeds,
+FCPR,EUREX,Dow Jones-UBS Precious Metals,HMUZ,EUREX/FCPR,Precious Metals,
+FCSO,EUREX,Dow Jones-UBS Softs,HMUZ,EUREX/FCSO,Softs,
+FCXE,EUREX,Dow Jones-UBS Ex Energy Index,HMUZ,EUREX/FCXE,Natural Gas,
 FDAX,EUREX,DAX,HMUZ,EUREX/FDAX,,
 FDIV,EUREX,TecDAX,HMUZ,EUREX/FDIV,,
 FEAA,EUREX,EU Aviation Allowence,Z,EUREX/FEAA,,
