@@ -1,44 +1,14 @@
 package raf.osiguranje.accounttransaction.model;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import raf.osiguranje.accounttransaction.model.dto.OrderDto;
+import raf.osiguranje.accounttransaction.model.dto.SecurityType;
 import raf.osiguranje.accounttransaction.model.dto.TransactionDTO;
 import raf.osiguranje.accounttransaction.model.dto.TransactionType;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
-@Getter
-@Setter
-@AllArgsConstructor
 @Entity
-public class Transaction {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column
-    private Long accountId;
-
-    @Column
-    private LocalDateTime timestamp=LocalDateTime.now();
-
-    @Column
-    private Long orderId;
-
-    @Column
-    private Long userId;
-
-    @Column
-    private Long currencyId;
-
-    @Column
-    private String text;
+public class Transaction extends TransactionBase {
 
     @Column
     private int payment;
@@ -52,25 +22,47 @@ public class Transaction {
     @Column
     private int usedReserve;
 
-    @Column
-    private TransactionType transactionType;
-
     public Transaction(){
-        this.timestamp = LocalDateTime.now();
     }
 
-    public Transaction(Long accountId, Long orderId, Long userId, Long currencyId, int payment, int payout, int reserve, int usedReserve,String text,TransactionType transactionType) {
-        this.accountId = accountId;
-        this.timestamp = LocalDateTime.now();
-        this.orderId = orderId;
-        this.userId = userId;
-        this.currencyId = currencyId;
+    public Transaction(Long accountId, Long orderId, Long userId, Long currencyId, Long securityId, SecurityType securityType, String text, TransactionType transactionType, int payment, int payout, int reserve, int usedReserve) {
+        super(accountId, orderId, userId, currencyId, securityId, securityType, text, transactionType);
         this.payment = payment;
         this.payout = payout;
         this.reserve = reserve;
         this.usedReserve = usedReserve;
-        this.transactionType = transactionType;
-        this.text = text;
+    }
+
+    public int getPayment() {
+        return payment;
+    }
+
+    public void setPayment(int payment) {
+        this.payment = payment;
+    }
+
+    public int getPayout() {
+        return payout;
+    }
+
+    public void setPayout(int payout) {
+        this.payout = payout;
+    }
+
+    public int getReserve() {
+        return reserve;
+    }
+
+    public void setReserve(int reserve) {
+        this.reserve = reserve;
+    }
+
+    public int getUsedReserve() {
+        return usedReserve;
+    }
+
+    public void setUsedReserve(int usedReserve) {
+        this.usedReserve = usedReserve;
     }
 
     @Override
@@ -93,7 +85,7 @@ public class Transaction {
     public TransactionDTO getDto(){
         OrderDto ord = new OrderDto();
         ord.setOrderId(this.orderId);
-        return new TransactionDTO(this.id,this.accountId,this.timestamp,ord,this.userId,this.currencyId,
+        return new TransactionDTO(this.id,this.accountId,this.timestamp,ord,this.userId,this.currencyId,this.securityId,this.securityType,
                 this.text,this.payment,this.payout,this.reserve,this.usedReserve,transactionType);
     }
 

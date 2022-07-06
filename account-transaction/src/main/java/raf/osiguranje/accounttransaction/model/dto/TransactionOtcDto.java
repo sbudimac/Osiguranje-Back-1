@@ -13,6 +13,7 @@ public class TransactionOtcDto {
     private Long accountId;
 
     private Long securityId;
+
     private SecurityType securityType;
 
     private Long userId;
