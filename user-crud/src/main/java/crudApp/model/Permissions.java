@@ -17,8 +17,8 @@ public class Permissions {
 
     public Permissions() {}
 
-    public Permissions(boolean admin, boolean stockTrading, boolean stockOverview, boolean contractConclusion, boolean supervisor, boolean traineeAgent, boolean agent) {
-        this.isAdmin = admin;
+    public Permissions(boolean isAdmin, boolean stockTrading, boolean stockOverview, boolean contractConclusion, boolean supervisor, boolean traineeAgent, boolean agent) {
+        this.isAdmin = isAdmin;
         this.stockTrading = stockTrading;
         this.stockOverview = stockOverview;
         this.contractConclusion = contractConclusion;
